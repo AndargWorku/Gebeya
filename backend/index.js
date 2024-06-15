@@ -8,7 +8,8 @@ const router = require('./routes')
 
 const app = express()
 app.use(cors({
-    origin : process.env.FRONTEND_URL,
+    origin : `https://gebeya-p9r3-50vmtv53x-andargworkus-projects.vercel.app`,
+    // process.env.FRONTEND_URL,
     // 'http://localhost:3000',
    
     credentials : true
