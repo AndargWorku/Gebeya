@@ -182,7 +182,7 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 w-full max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-6">
+            <button className="bg-green-800 hover:bg-green-900 text-white px-6 py-2 w-full max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-6">
               Sign Up
             </button>
           </form>
@@ -191,7 +191,7 @@ const SignUp = () => {
             Already have account ?{" "}
             <Link
               to={"/login"}
-              className=" text-red-600 hover:text-red-700 hover:underline"
+              className=" text-green-800 hover:text-green-900 hover:underline"
             >
               Login
             </Link>

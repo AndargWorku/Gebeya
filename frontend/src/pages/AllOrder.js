@@ -53,7 +53,7 @@ const AllOrder = () => {
                                           <div>
                                             <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.name}</div>
                                             <div className='flex items-center gap-5 mt-1'>
-                                              <div className='text-lg text-red-500'>{displayETBCurrency(product.price)}</div>
+                                              <div className='text-lg text-green-700'>{displayETBCurrency(product.price)}</div>
                                               <p>Quantity : {product.quantity}</p>
                                             </div>
                                           </div>
