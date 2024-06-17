@@ -15,7 +15,7 @@ app.use(cors({
 
         'https://gebeya-p9r3.vercel.app/',
         'https://gebeya-p9r3.vercel.app',
-         d7ca933759eafb04d2b647da7946ee43c219c640
+        
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
    
