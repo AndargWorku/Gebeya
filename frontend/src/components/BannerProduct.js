@@ -62,7 +62,7 @@ const BannerProduct = () => {
             } else {
                 setCurrentImage(0)
             }
-        }, 5000)
+        }, 1000)
 
         return () => clearInterval(interval)
     }, [currentImage])
