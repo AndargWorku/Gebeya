@@ -10,8 +10,13 @@ const app = express()
 app.use(cors({
     origin: [
         'http://localhost:3000',
+<<<<<<< HEAD
         'https://gebeya-p9r3-6zo2g4oa4-andargworkus-projects.vercel.app/',
         'https://gebeya-p9r3-6zo2g4oa4-andargworkus-projects.vercel.app'
+=======
+        'https://gebeya-p9r3.vercel.app/',
+        'https://gebeya-p9r3.vercel.app'
+>>>>>>> d7ca933759eafb04d2b647da7946ee43c219c640
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
    
