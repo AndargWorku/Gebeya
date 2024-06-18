@@ -174,7 +174,7 @@ const AdminEditProduct = ({
                                        setFullScreenImage(el)
                                      }}/>
 
-                                     <div className='absolute bottom-0 right-0 p-1 text-white bg-red-600 rounded-full hidden group-hover:block cursor-pointer' onClick={()=>handleDeleteProductImage(index)}>
+                                     <div className='absolute bottom-0 right-0 p-1 text-white bg-green-800 rounded-full hidden group-hover:block cursor-pointer' onClick={()=>handleDeleteProductImage(index)}>
                                        <MdDelete/>  
                                      </div>
                                </div>
