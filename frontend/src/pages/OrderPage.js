@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import SummaryApi from '../common'
 import moment from 'moment'
-import displayETBCurrency from '../helpers/displayCurrency'
+import displayUSDCurrency from '../helpers/displayCurrency'
 
 const OrderPage = () => {
   const [data,setData] = useState([])
@@ -52,7 +52,7 @@ const OrderPage = () => {
                                         <div>
                                           <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.name}</div>
                                           <div className='flex items-center gap-5 mt-1'>
-                                            <div className='text-lg text-yellow-700'>{displayETBCurrency(product.price)}</div>
+                                            <div className='text-lg text-yellow-700'>{displayUSDCurrency(product.price)}</div>
                                             <p>Quantity : {product.quantity}</p>
                                           </div>
                                         </div>

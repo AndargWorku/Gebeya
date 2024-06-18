@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import SummaryApi from '../common'
 import Context from '../context'
-import displayETBCurrency from '../helpers/displayCurrency'
+import displayUSDCurrency from '../helpers/displayCurrency'
 import { MdDelete } from "react-icons/md";
 import {loadStripe} from '@stripe/stripe-js';
 
@@ -178,8 +178,8 @@ const Cart = () => {
                                     <h2 className='text-lg lg:text-xl text-ellipsis line-clamp-1'>{product?.productId?.productName}</h2>
                                     <p className='capitalize text-slate-500'>{product?.productId.category}</p>
                                     <div className='flex items-center justify-between'>
-                                            <p className='text-yellow-800 font-medium text-lg'>{displayETBCurrency(product?.productId?.sellingPrice)}</p>
-                                            <p className='text-slate-600 font-semibold text-lg'>{displayETBCurrency(product?.productId?.sellingPrice  * product?.quantity)}</p>
+                                            <p className='text-yellow-800 font-medium text-lg'>{displayUSDCurrency(product?.productId?.sellingPrice)}</p>
+                                            <p className='text-slate-600 font-semibold text-lg'>{displayUSDCurrency(product?.productId?.sellingPrice  * product?.quantity)}</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-1'>
                                         <button className='border border-yellow-800 text-yellow-800 hover:bg-yellow-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>decraseQty(product?._id,product?.quantity)}>-</button>
@@ -214,7 +214,7 @@ const Cart = () => {
 
                                     <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
                                         <p>Total Price</p>
-                                        <p>{displayETBCurrency(totalPrice)}</p>    
+                                        <p>{displayUSDCurrency(totalPrice)}</p>    
                                     </div>
 
                                     <button className='bg-blue-600 p-2 text-white w-full mt-2' onClick={handlePayment}>Payment</button>

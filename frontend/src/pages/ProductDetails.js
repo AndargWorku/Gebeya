@@ -3,7 +3,7 @@ import  { useNavigate, useParams } from 'react-router-dom'
 import SummaryApi from '../common'
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
-import displayETBCurrency from '../helpers/displayCurrency';
+import displayUSDCurrency from '../helpers/displayCurrency';
 import VerticalCardProduct from '../components/VerticalCardProduct';
 import CategroyWiseProductDisplay from '../components/CategoryWiseProductDisplay';
 import addToCart from '../helpers/addToCart';
@@ -199,8 +199,8 @@ const ProductDetails = () => {
                 </div>
 
                 <div className='flex items-center gap-2 text-2xl lg:text-3xl font-medium my-1'>
-                  <p className='text-yellow-600'>{displayETBCurrency(data.sellingPrice)}</p>
-                  <p className='text-yellow-600 line-through'>{displayETBCurrency(data.price)}</p>
+                  <p className='text-yellow-600'>{displayUSDCurrency(data.sellingPrice)}</p>
+                  <p className='text-yellow-600 line-through'>{displayUSDCurrency(data.price)}</p>
                 </div>
 
                 <div className='flex items-center gap-3 my-2'>

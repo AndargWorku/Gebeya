@@ -1,27 +1,29 @@
-const displayETBCurrency = (num) => {
-    const formatter = new Intl.NumberFormat('en-ET', {
+
+const displayUSDCurrency = (num) => {
+    const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
-        currency: 'ETB',
+        currency: 'USD',
         minimumFractionDigits: 2
     });
 
     return formatter.format(num);
 }
 
-export default displayETBCurrency;
+export default displayUSDCurrency;
 
 
 
+// const displayETBCurrency = (num) => {
+//     const formatter = new Intl.NumberFormat('en-ET', {
+//         style: 'currency',
+//         currency: 'ETB',
+//         minimumFractionDigits: 2
+//     });
 
-// const displayINRCurrency = (num) => {
-//     const formatter = new Intl.NumberFormat('en-IN',{
-//         style : "currency",
-//         currency : 'INR',
-//         minimumFractionDigits : 2
-//     })
-
-//     return formatter.format(num)
-
+//     return formatter.format(num);
 // }
 
-// export default displayINRCurrency
+// export default displayETBCurrency;
+
+
+

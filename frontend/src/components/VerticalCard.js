@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import scrollTop from '../helpers/scrollTop'
-import displayETBCurrency from '../helpers/displayCurrency'
+import displayUSDCurrency from '../helpers/displayCurrency'
 import Context from '../context'
 import addToCart from '../helpers/addToCart'
 import { Link } from 'react-router-dom'
@@ -47,8 +47,8 @@ const VerticalCard = ({loading,data = []}) => {
                              <h2 className='font-medium text-base md:text-lg text-ellipsis line-clamp-1 text-black'>{product?.productName}</h2>
                              <p className='capitalize text-yellow-600'>{product?.category}</p>
                              <div className='flex gap-3'>
-                                 <p className='text-yellow-700 font-medium'>{ displayETBCurrency(product?.sellingPrice) }</p>
-                                 <p className='text-yellow-600 line-through'>{ displayETBCurrency(product?.price)  }</p>
+                                 <p className='text-yellow-700 font-medium'>{ displayUSDCurrency(product?.sellingPrice) }</p>
+                                 <p className='text-yellow-600 line-through'>{ displayUSDCurrency(product?.price)  }</p>
                              </div>
                              <button className='text-sm bg-yellow-700 hover:bg-yellow-700 text-white px-3 py-0.5 rounded-full' onClick={(e)=>handleAddToCart(e,product?._id)}>Add to Cart</button>
                          </div>
