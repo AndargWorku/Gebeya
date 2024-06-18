@@ -162,7 +162,7 @@ const ProductDetails = () => {
               <div className='grid gap-1 w-full'>
                 <p className='bg-slate-200 animate-pulse  h-6 lg:h-8 w-full rounded-full inline-block'></p>
                 <h2 className='text-2xl lg:text-4xl font-medium h-6 lg:h-8  bg-slate-200 animate-pulse w-full'></h2>
-                <p className='capitalize text-slate-400 bg-slate-200 min-w-[100px] animate-pulse h-6 lg:h-8  w-full'></p>
+                <p className='capitalize text-yellow-600 bg-slate-200 min-w-[100px] animate-pulse h-6 lg:h-8  w-full'></p>
 
                 <div className='text-yellow-700 bg-slate-200 h-6 lg:h-8  animate-pulse flex items-center gap-1 w-full'>
     
@@ -170,7 +170,7 @@ const ProductDetails = () => {
 
                 <div className='flex items-center gap-2 text-2xl lg:text-3xl font-medium my-1 h-6 lg:h-8  animate-pulse w-full'>
                   <p className='text-yellow-700 bg-slate-200 w-full'></p>
-                  <p className='text-slate-400 line-through bg-slate-200 w-full'></p>
+                  <p className='text-yellow-600 line-through bg-slate-200 w-full'></p>
                 </div>
 
                 <div className='flex items-center gap-3 my-2 w-full'>
@@ -179,7 +179,7 @@ const ProductDetails = () => {
                 </div>
 
                 <div className='w-full'>
-                  <p className='text-slate-600 font-medium my-1 h-6 lg:h-8   bg-slate-200 rounded animate-pulse w-full'></p>
+                  <p className='text-yellow-600 font-medium my-1 h-6 lg:h-8   bg-slate-200 rounded animate-pulse w-full'></p>
                   <p className=' bg-slate-200 rounded animate-pulse h-10 lg:h-12  w-full'></p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ const ProductDetails = () => {
               <div className='flex flex-col gap-1'>
                 <p className='bg-red-200 text-yellow-700 px-2 rounded-full inline-block w-fit'>{data?.brandName}</p>
                 <h2 className='text-2xl lg:text-4xl font-medium'>{data?.productName}</h2>
-                <p className='capitalize text-slate-400'>{data?.category}</p>
+                <p className='capitalize text-yellow-600'>{data?.category}</p>
 
                 <div className='text-yellow-700 flex items-center gap-1'>
                     <FaStar/>
@@ -199,13 +199,13 @@ const ProductDetails = () => {
                 </div>
 
                 <div className='flex items-center gap-2 text-2xl lg:text-3xl font-medium my-1'>
-                  <p className='text-yellow-700'>{displayETBCurrency(data.sellingPrice)}</p>
-                  <p className='text-slate-400 line-through'>{displayETBCurrency(data.price)}</p>
+                  <p className='text-yellow-600'>{displayETBCurrency(data.sellingPrice)}</p>
+                  <p className='text-yellow-600 line-through'>{displayETBCurrency(data.price)}</p>
                 </div>
 
                 <div className='flex items-center gap-3 my-2'>
-                  <button className='border-2 border-yellow-700 rounded px-3 py-1 min-w-[120px] text-yellow-700 font-medium hover:bg-yellow-700 hover:text-white' onClick={(e)=>handleBuyProduct(e,data?._id)}>Buy</button>
-                  <button className='border-2 border-yellow-700 rounded px-3 py-1 min-w-[120px] font-medium text-white bg-yellow-800 hover:text-yellow-800 hover:bg-white' onClick={(e)=>handleAddToCart(e,data?._id)}>Add To Cart</button>
+                  <button className='border-2 border-yellow-600 rounded px-3 py-1 min-w-[120px] text-yellow-600 font-medium hover:bg-yellow-700 hover:text-white' onClick={(e)=>handleBuyProduct(e,data?._id)}>Buy</button>
+                  <button className='border-2 border-yellow-600 rounded px-3 py-1 min-w-[120px] font-medium text-white bg-yellow-800 hover:text-yellow-800 hover:bg-white' onClick={(e)=>handleAddToCart(e,data?._id)}>Add To Cart</button>
                 </div>
 
                 <div>
