@@ -99,7 +99,7 @@ const UploadProduct = ({
 
             <div className='flex justify-between items-center pb-3'>
                 <h2 className='font-bold text-lg'>Upload Product</h2>
-                <div className='w-fit ml-auto text-2xl hover:text-green-800 cursor-pointer' onClick={onClose}>
+                <div className='w-fit ml-auto text-2xl hover:text-yellow-800 cursor-pointer' onClick={onClose}>
                     <CgClose/>
                 </div>
             </div>
@@ -181,7 +181,7 @@ const UploadProduct = ({
                             }
                         </div>
                     ) : (
-                      <p className='text-green-800 text-xs'>*Please upload product image</p>
+                      <p className='text-yellow-800 text-xs'>*Please upload product image</p>
                     )
                   }
                   
@@ -227,7 +227,7 @@ const UploadProduct = ({
 
 
 
-              <button className='px-3 py-2 bg-green-800 text-white mb-10 hover:bg-green-900'>Upload Product</button>
+              <button className='px-3 py-2 bg-yellow-800 text-white mb-10 hover:bg-yellow-900'>Upload Product</button>
           </form> 
 
 

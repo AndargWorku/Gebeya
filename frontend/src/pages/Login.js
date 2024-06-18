@@ -104,16 +104,16 @@ const Login = () => {
                                     </span>
                                 </div>
                             </div>
-                            <Link to={'/forgot-password'} className='block w-fit ml-auto hover:underline hover:text-green-800'>
+                            <Link to={'/forgot-password'} className='block w-fit ml-auto hover:underline hover:text-yellow-700'>
                                 Forgot password ?
                             </Link>
                         </div>
 
-                        <button className='bg-green-800 hover:bg-green-900 text-white px-6 py-2 w-full max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-6'>Login</button>
+                        <button className='bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-2 w-full max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-6'>Login</button>
 
                     </form>
 
-                    <p className='my-5'>Don't have account ? <Link to={"/sign-up"} className=' text-green-800 hover:text-green-900 hover:underline'>Sign up</Link></p>
+                    <p className='my-5'>Don't have account ? <Link to={"/sign-up"} className=' text-yellow-700 hover:text-yellow-800 hover:underline'>Sign up</Link></p>
             </div>
 
 

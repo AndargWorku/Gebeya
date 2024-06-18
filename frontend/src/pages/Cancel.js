@@ -11,8 +11,8 @@ const Cancel = () => {
         height={150}
         className='mix-blend-multiply'
       />
-      <p className='text-green-800 font-bold text-xl'>Payment Cancel</p>
-      <Link to={"/cart"} className='p-2 px-3 mt-5 border-2 border-green-800 rounded font-semibold text-green-800 hover:bg-green-800 hover:text-white'>Go To Cart</Link>
+      <p className='text-yellow-800 font-bold text-xl'>Payment Cancel</p>
+      <Link to={"/cart"} className='p-2 px-3 mt-5 border-2 border-yellow-800 rounded font-semibold text-yellow-800 hover:bg-yellow-800 hover:text-white'>Go To Cart</Link>
     </div>
   )
 }
